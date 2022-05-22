@@ -2,10 +2,10 @@ document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch() {
   let choice = document.querySelector('input').value
-  if(choice.length !== 12) {
-    alert(`Please ensure that barcode is 12 characters`)
-    return
-  }
+  // if(choice.length !== 12) {
+  //   alert(`Please ensure that barcode is 12 characters`)
+  //   return
+  // }
 
 
   const url = `https://world.openfoodfacts.org/api/v0/product/${choice}.json`
@@ -67,7 +67,7 @@ class ProductInfo {
         let newICell = newRow.insertCell(0)
         // let newVCell = newRow.insertCell(1)
         let newItext = document.createTextNode(
-          this.ingredients[key].text
+          this.ingredients[key].text.toLowerCase()
         )
         // let vegStatus = this.ingredients[key].vegetarian
         // let newVtext = document.createTextNode(vegStatus)
@@ -75,17 +75,17 @@ class ProductInfo {
         newICell.appendChild(newItext)
         // newVCell.appendChild(newVtext)
 
-        let glutenArray = ['barley', 'rye', 'wheat', 'malt', 'brewer\'s yeast', 'oats', 'flour', 'bulgur', 'couscous', 'farina']
-        let safeArray = ['maltodextrin', 'corn maltodextrin', 'corn masa flour', 'corn flour']
+        let glutenArray = ['barley', 'rye', 'wheat', 'malt', 'brewer\'s yeast', 'oats', 'flour', 'bulgur', 'couscous', 'farina', 'semolina']
+        let safeArray = ['maltodextrin', 'corn maltodextrin', 'corn masa flour', 'corn flour', 'cassava flour', 'coconut flour' , 'almond flour']
         
         for(let item of glutenArray) {
           // console.log(item === this.ingredients[key].text)
           for (let el of safeArray) {
-          if (this.ingredients[key].text.includes(item)) {
+          if (this.ingredients[key].text.toLowerCase().includes(item)) {
             newICell.classList.add('avoid') 
           console.log(`${this.ingredients[key].text}`)
           }
-          if (this.ingredients[key].text.includes(el)) {
+          if (this.ingredients[key].text.toLowerCase().includes(el)) {
             newICell.classList.remove('avoid')
           }
         }
@@ -127,3 +127,4 @@ class ProductInfo {
 // 041196910759 progresso
 // 070164008235 matzo soup
 // 011110098542 peanut butter
+// 076808502947 rigatoni
