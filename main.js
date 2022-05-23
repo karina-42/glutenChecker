@@ -50,7 +50,7 @@ class ProductInfo {
   checkForGluten() {
     let glutenStatus = document.getElementById('gluten-status')
     if (this.allergens.length === 0) { //if there's nothing in the allergens hierarchy array
-      glutenStatus.textContent = `Gluten free! No allergens listed so maybe it's gluten free`
+      glutenStatus.textContent = `Possibly Gluten free! No allergens listed so maybe it's gluten free, check the ingredients`
     } else if (this.allergens.includes('en:gluten')) { //if one item of allergens hierarchy array is gluten
       glutenStatus.textContent = `Danger! This  has gluten`
     } else { //if no items of allergens array is gluten
