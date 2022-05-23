@@ -40,7 +40,10 @@ class ProductInfo {
 
   showInfo() {
     document.getElementById('product-img').src = this.image
-    document.getElementById('product-img').alt = 'Image is not available'
+    document.getElementById('product-img').alt = `Image of ${this.name}`
+    if (this.image == undefined) {
+      document.getElementById('product-img').alt = 'Image has not been added yet'
+    }
     document.getElementById('product-name').textContent = this.name
   }
 
