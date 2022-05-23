@@ -1,5 +1,5 @@
 html {
-  color: pink;
+  color: rgb(129, 64, 76);
   font-size: 62.5%;
   height: 100%;
 }
@@ -52,4 +52,8 @@ th {
 
 .avoid {
   background-color: red;
+}
+
+#gluten-status {
+  color: darkorange;
 }
