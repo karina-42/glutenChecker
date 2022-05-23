@@ -76,7 +76,7 @@ class ProductInfo {
         // newVCell.appendChild(newVtext)
 
         let glutenArray = ['barley', 'rye', 'wheat', 'malt', 'brewer\'s yeast', 'oats', 'flour', 'bulgur', 'couscous', 'farina', 'semolina']
-        let safeArray = ['maltodextrin', 'corn maltodextrin', 'corn masa flour', 'corn flour', 'cassava flour', 'coconut flour' , 'almond flour']
+        let safeArray = ['maltodextrin', 'corn maltodextrin', 'corn masa flour', 'corn flour', 'cassava flour', 'coconut flour' , 'almond flour', 'white rice flour']
         
         for(let item of glutenArray) {
           // console.log(item === this.ingredients[key].text)
