@@ -1,4 +1,4 @@
-Check if you food has gluten
+[Check if your food has gluten](https://karina-42.github.io/glutenChecker/)
 
 test with these codes
 
