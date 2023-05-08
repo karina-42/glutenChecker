@@ -3,7 +3,7 @@ An app to check if your food contains gluten or not by inputting its barcode num
 
 ## Visit here: [Check if your food has gluten](https://karina-42.github.io/glutenChecker/)
 
-![screenshot]()
+![screenshot](https://res.cloudinary.com/dslxa2yhi/image/upload/v1683546587/portfolioReadmeScreenshots/gcscreen_tubnpi.png)
 
 ---
 
@@ -19,11 +19,11 @@ My sister has celiac disease so I made a website for her to check if her food ha
 
 After entering a UPC barcode number, the site will use the Open Food Facts API to check the ingredients.
 
-![check]()
+![check](https://res.cloudinary.com/dslxa2yhi/image/upload/v1683546588/portfolioReadmeScreenshots/gcng_bnoe9w.png)
 
 You will get a message warning you of its contents and a list of ingredients. Ingredients highlighted in red have gluten.
 
-![has gluten]()
+![has gluten](https://res.cloudinary.com/dslxa2yhi/image/upload/v1683546587/portfolioReadmeScreenshots/gcwg_ndil1y.png)
 
 Please test it with these codes:
 
